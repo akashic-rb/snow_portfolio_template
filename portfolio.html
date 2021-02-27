@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snow | Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Manual CSS -->
+    <link rel="stylesheet" href="css/portfolio-style.css">
+    <!-- Animation Embedded -->
+    <link rel="stylesheet" href="css/index-animation.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Playfair+Display:400,400i&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="nav-wrapper transparent z-depth-0 header">
+            <div class="container">
+                <a href="index.html" class="brand-logo">
+                    <img src="img/logo.png" alt="" style="width: auto;">
+                </a>
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+                <ul class="right hide-on-med-and-down" style="line-height: 35px">
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+        </ul>
+    </header>
+    <!-- TODO: Statistic -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title center" id="intro" style="margin-top: 0;">What have we been doing through times?</h2>
+            <script>
+                window.onload = () => {
+                let chart = new CanvasJS.Chart("chartContainer", {
+                    theme: "light2", // "light1", "light2", "dark1", "dark2"
+                    exportEnabled: false,
+                    animationEnabled: true,
+                    title: {
+                        text: "Most developed categories"
+                    },
+                    data: [{
+                        type: "pie",
+                        startAngle: 25,
+                        toolTipContent: "<b>{label}</b>: {y}%",
+                        showInLegend: "true",
+                        legendText: "{label}",
+                        indexLabelFontSize: 16,
+                        indexLabel: "{label} - {y}%",
+                        dataPoints: [
+                            { y: 51.08, label: "Logo" },
+                            { y: 27.34, label: "Web Design" },
+                            { y: 10.62, label: "Photography" },
+                            { y: 5.02, label: "Branding" },
+                            { y: 4.07, label: "Textile & Fashion Design" },
+                            { y: 1.22, label: "Filming" },
+                            { y: 0.44, label: "Others" }
+                        ]
+                    }]
+                });
+                chart.render();     
+                }
+            </script>
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        </div>
+    </section>
+    <!-- sample -->
+    <section class="section">
+        <h2 class="title center">Starting with our best projects</h2>
+        <h3 class="sub center" style="font-size: 20px; color: #757575">Take a look at our clients projects</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-2-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            Business Card
+                        </h3>
+                        <h4 class="item-sub">
+                            trending
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-6-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            Heja Stockholm
+                        </h3>
+                        <h4 class="item-sub">
+                            photography
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-5-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            minimal bag trending
+                        </h3>
+                        <h4 class="item-sub">
+                            brand
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-3-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            Minimal Mobile App
+                        </h3>
+                        <h4 class="item-sub">
+                            Design
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-7-sm.png');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            minimal bag trending
+                        </h3>
+                        <h4 class="item-sub">
+                            brand
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-8-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            minimal bag trending
+                        </h3>
+                        <h4 class="item-sub">
+                            brand
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-4-sm.png');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            Modern T-shirt
+                        </h3>
+                        <h4 class="item-sub">
+                            brand
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-12-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            paper bag
+                        </h3>
+                        <h4 class="item-sub">
+                            photography
+                        </h4>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 pj-item">
+                    <div class="item-img-contain">
+                        <div class="item-img" style="background-image: url('img/portfolio-9-sm.jpg');"></div>
+                    </div>   
+                    <div class="item-desc center">
+                        <h3 class="item-title">
+                            clean & groovy
+                        </h3>
+                        <h4 class="item-sub">
+                            design
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grey lighten-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s6 m4 l2 sample">
+                        <img src="img/partner-logo-1-dark.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s6 m4 l2 sample">
+                        <img src="img/partner-logo-2-dark.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s6 m4 l2 sample">
+                        <img src="img/partner-logo-3-dark.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s6 m4 l2 sample">
+                        <img src="img/partner-logo-4-dark.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s6 m4 l2 sample">
+                        <img src="img/partner-logo-5-dark.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s6 m4 l2 sample">
+                        <img src="img/partner-logo-6-dark.png" alt="" class="responsive-img">
+                    </div>
+                </div>
+                <script>
+                    $('.sample img').hover(ele => {
+                        let target = $(ele.target);
+                        target.css('transform', 'scale(1.2)');
+                        target.parent().addClass('sample-hov z-depth-1')
+                    }, ele => {
+                        let target = $(ele.target)
+                        target.css('transform', 'none');
+                        target.parent().removeClass('sample-hov z-depth-1');
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- art -->
+    <section class="section">
+        <h2 class="title center" style="margin-top: 0">Filmmaking art</h2>
+        <div class="row">
+            <div class="center">
+                <div class="col s12 m12 l6 offset-s0 offset-m2 push-l3 relate" style="margin: 0 auto">
+                    <video class="center" style="width: 100%;">
+                        <source src="media/Clean Organic Titles.mp4">
+                    </video>
+                    <button class="btn-large btn-floating white z-depth-0" id="play-btn">
+                        <i class="material-icons black-text">play_arrow</i>
+                    </button>
+                </div>
+                <script>
+                    $('#play-btn').click(() => {
+                        $('video').get(0).play();
+                        $('#play-btn').css('visibility', 'hidden');
+                    });
+                    $('video').click(() => {
+                        $('video').get(0).pause();
+                        $('#play-btn').css('visibility', 'visible');
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="section grey lighten-5">
+        <h2 class="title center">Come up with an idea?</h2>
+        <h3 class="sub center" style="font-size: 20px; color: #757575">Contact us to make it real</h3>
+        <div class="row">
+            <div class="input-field col s12 m12 l12 center">
+                <a href="index.html#contact" class="btn z-depth-0 black">SEND MESSAGE</a>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer grey darken-3 white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col l5" style="padding-left: 0;">
+                    <div class="title" style="font-size: 25px">
+                        Our terms and policy
+                    </div>
+                    <p>
+                        <a href="#" class="white-text">FAQ</a>
+                    </p>
+                    <p>
+                        <a href="#" class="white-text">Guaranteed Policy</a>
+                    </p>
+                    <p>
+                        <a href="#" class="white-text">Copyright</a>
+                    </p>
+                    <h1></h1>
+                    <div class="title" style="font-size: 25px">
+                        Contact us via social media
+                    </div>
+                    <div class="row social">
+                        <p class="col l1">
+                            <a href="#" class="white-text">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </p>
+                        <p class="col l1">
+                            <a href="#" class="white-text">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </p>
+                        <p class="col l1">
+                            <a href="#" class="white-text">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </p>
+                        <p class="col l1">
+                            <a href="#" class="white-text">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </p>
+                        <p class="col l1">
+                            <a href="#" class="white-text">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=10111%20Santa%20Monica%20Boulevard%2C%20LA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                            <a href="https://www.crocothemes.net"></a>
+                        </div>
+                        <style>
+                            .mapouter{position:relative;text-align:center;height:250px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:100%;}
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black white-text">
+            <div class="row center-align">              
+                <p>Special thank to Unvab - UI/UX Designer</p>
+                <p>&copy;
+                    <script>
+                        let year = new Date().getFullYear();
+                        document.write(year);
+                    </script>
+                    PS09193. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('nav img').attr('src', 'img/logo.png');
+            $('nav li a').attr('style', 'color: #000 !important');
+            $('nav .material-icons').css('color', '#000 !important');
+        });
+    </script>
+</body>
+</html>
