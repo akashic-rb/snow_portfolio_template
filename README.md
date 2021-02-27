@@ -1,5 +1,5 @@
 Snow protfolio template
--This is my college project
+- This is my college project
 
 Tribution:
 - This website is inspired from Snow template, a graphic desinger portfolio template
