@@ -171,6 +171,9 @@ nav img {
     transition: transform .4s .3s,opacity .4s .3s;
 }
 
+.card-image img {
+    height: 200px;
+}
 /* hover section */
 .pj-item:hover .item-desc {
     opacity: 1;
